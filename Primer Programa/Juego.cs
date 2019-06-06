@@ -243,6 +243,10 @@
 
         public void validarRespuestas(string Respuesta)
         {
+            btRespuesta1.Enabled = false;
+            btRespuesta2.Enabled = false;
+            btRespuesta3.Enabled = false;
+            btRespuesta4.Enabled = false;
             if (Respuesta==respuestaValida)
             {
                 lblResultadoDeRespuesta.Text = "¡Correcto!";
@@ -250,7 +254,7 @@
             }
             else
             {
-                lblResultadoDeRespuesta.Text = "¡InCorrecto!";
+                lblResultadoDeRespuesta.Text = "¡Perdió el juego!";
                 lblResultadoDeRespuesta.Visible = true;
             }
         }
@@ -259,24 +263,28 @@
         {
             btIniciar.Enabled = true;
             validarRespuestas(btRespuesta1.Text);
+            
         }
 
         private void BtRespuesta2_Click(object sender, EventArgs e)
         {
             btIniciar.Enabled = true;
             validarRespuestas(btRespuesta2.Text);
+            
         }
 
         private void BtRespuesta3_Click(object sender, EventArgs e)
         {
             btIniciar.Enabled = true;
             validarRespuestas(btRespuesta3.Text);
+           
         }
 
         private void BtRespuesta4_Click(object sender, EventArgs e)
         {
             btIniciar.Enabled = true;
             validarRespuestas(btRespuesta4.Text);
+           
         }
     }
 }
