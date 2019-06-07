@@ -51,7 +51,7 @@
             // 
             // lblPregunta
             // 
-            this.lblPregunta.Font = new System.Drawing.Font("BankGothic-Medium", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPregunta.Font = new System.Drawing.Font("Clarendon Blk BT", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPregunta.Location = new System.Drawing.Point(12, 225);
             this.lblPregunta.MaximumSize = new System.Drawing.Size(1081, 181);
             this.lblPregunta.MinimumSize = new System.Drawing.Size(1081, 181);
@@ -257,6 +257,7 @@
             this.lblResultadoDeRespuesta.TabIndex = 18;
             this.lblResultadoDeRespuesta.Text = "¡Correcto!";
             this.lblResultadoDeRespuesta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResultadoDeRespuesta.Visible = false;
             // 
             // Juego
             // 
@@ -285,7 +286,6 @@
             this.Controls.Add(this.lblPregunta);
             this.Name = "Juego";
             this.Text = "Juego";
-            this.Load += new System.EventHandler(this.Juego_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
