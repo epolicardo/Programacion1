@@ -9,7 +9,7 @@ namespace ranita
         Timer relojTiempo = new Timer();
         private int movimientoH = 10;
         private int intervalo = 50;
-        private int segundosRestantes = 10;
+        private int segundosRestantes = 60;
         
 
         
