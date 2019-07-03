@@ -26,6 +26,7 @@ namespace ranita
             switch (e.KeyCode.ToString())
             {
                 case "Left":
+                    
                     if (lblRana.Left >= 50)
                     {
                         lblRana.Left = lblRana.Left - 50;
@@ -42,8 +43,7 @@ namespace ranita
                     lblRana.Top = lblRana.Top - 50;
                     if (lblRana.Top <= 50)
                     {
-                        //  reloj.Stop();
-                        // relojTiempo.Stop(); 
+                        
                         movimientoH = movimientoH + 5;
                         lblPuntos.Text = Convert.ToString(Convert.ToInt32(lblPuntos.Text) + segundosRestantes);
                         segundosRestantes = 60;
@@ -69,13 +69,13 @@ namespace ranita
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
-            
+
             relojTiempo.Interval = 1000;
-            relojTiempo.Tick += new EventHandler(tiempoNivel);
             relojTiempo.Start();
+            relojTiempo.Tick += new EventHandler(tiempoNivel);
+
             reloj.Interval = intervalo;
             reloj.Start();
-
             reloj.Tick += new EventHandler(moverAutos);
             reloj.Tick += new EventHandler(controlarChoques);
         }
@@ -241,6 +241,14 @@ namespace ranita
             intervalo = 10;
             lblRana.Top = 700;
             btnReinicio.Visible = false;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            reloj.Stop();
+            relojTiempo.Stop();
+
+            
         }
     }
 }
