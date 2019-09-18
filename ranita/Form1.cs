@@ -10,9 +10,6 @@ namespace ranita
         private int movimientoH = 10;
         private int intervalo = 50;
         private int segundosRestantes = 60;
-        
-
-        
 
         public Form1(Label autoSeleccionado)
         {
@@ -20,13 +17,13 @@ namespace ranita
             lblRana.Image = autoSeleccionado.Image;
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        public void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            
+
             switch (e.KeyCode.ToString())
             {
                 case "Left":
-                    
+
                     if (lblRana.Left >= 50)
                     {
                         lblRana.Left = lblRana.Left - 50;
@@ -43,7 +40,7 @@ namespace ranita
                     lblRana.Top = lblRana.Top - 50;
                     if (lblRana.Top <= 50)
                     {
-                        
+
                         movimientoH = movimientoH + 5;
                         lblPuntos.Text = Convert.ToString(Convert.ToInt32(lblPuntos.Text) + segundosRestantes);
                         segundosRestantes = 60;
@@ -79,7 +76,7 @@ namespace ranita
             reloj.Tick += new EventHandler(moverAutos);
             reloj.Tick += new EventHandler(controlarChoques);
         }
-        
+
         /// <summary>
         /// Controla el tiempo del nivel
         /// </summary>
@@ -93,7 +90,7 @@ namespace ranita
                 reloj.Stop();
                 relojTiempo.Stop();
                 MessageBox.Show("Termino el juego");
-                btnReinicio.Visible = true;
+              
             }
         }
 
@@ -106,7 +103,7 @@ namespace ranita
 
         public void controlarChoques(object sender, EventArgs e)
         {
-            if (lblRana.Bounds.IntersectsWith(lblAuto1.Bounds) )
+            if (lblRana.Bounds.IntersectsWith(lblAuto1.Bounds))
             {
                 perdiste();
             }
@@ -240,15 +237,13 @@ namespace ranita
             lblNivel.Text = "0";
             intervalo = 10;
             lblRana.Top = 700;
-            btnReinicio.Visible = false;
+           
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             reloj.Stop();
             relojTiempo.Stop();
-
-            
         }
     }
 }

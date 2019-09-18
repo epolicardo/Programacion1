@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primer_Programa
@@ -13,9 +16,7 @@ namespace Primer_Programa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new Juego());
+            Application.Run(new Juego());
         }
-
-        
     }
 }

@@ -200,6 +200,7 @@
         {
             validarRespuestas(btRespuesta3.Text);
         }
+
         private void BtRespuesta4_Click(object sender, EventArgs e)
         {
             validarRespuestas(btRespuesta4.Text);

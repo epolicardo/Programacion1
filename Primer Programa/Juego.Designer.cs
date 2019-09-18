@@ -59,6 +59,7 @@
             this.lblPregunta.Size = new System.Drawing.Size(1081, 181);
             this.lblPregunta.TabIndex = 0;
             this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
             // 
             // btRespuesta1
             // 

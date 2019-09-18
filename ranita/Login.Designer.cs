@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbAmarillo = new System.Windows.Forms.RadioButton();
-            this.rbLila = new System.Windows.Forms.RadioButton();
-            this.rbAzul = new System.Windows.Forms.RadioButton();
-            this.rbNaranja = new System.Windows.Forms.RadioButton();
-            this.rbRojo = new System.Windows.Forms.RadioButton();
-            this.rbVerde = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.tmp = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rbVerde = new System.Windows.Forms.RadioButton();
+            this.rbRojo = new System.Windows.Forms.RadioButton();
+            this.rbNaranja = new System.Windows.Forms.RadioButton();
+            this.rbAzul = new System.Windows.Forms.RadioButton();
+            this.rbLila = new System.Windows.Forms.RadioButton();
+            this.rbAmarillo = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,79 +64,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // rbAmarillo
-            // 
-            this.rbAmarillo.Image = global::ranita.Properties.Resources.amarillo;
-            this.rbAmarillo.Location = new System.Drawing.Point(171, 208);
-            this.rbAmarillo.Name = "rbAmarillo";
-            this.rbAmarillo.Size = new System.Drawing.Size(133, 68);
-            this.rbAmarillo.TabIndex = 0;
-            this.rbAmarillo.TabStop = true;
-            this.rbAmarillo.UseVisualStyleBackColor = true;
-            // 
-            // rbLila
-            // 
-            this.rbLila.Image = global::ranita.Properties.Resources.lila;
-            this.rbLila.Location = new System.Drawing.Point(487, 208);
-            this.rbLila.Name = "rbLila";
-            this.rbLila.Size = new System.Drawing.Size(133, 68);
-            this.rbLila.TabIndex = 1;
-            this.rbLila.TabStop = true;
-            this.rbLila.UseVisualStyleBackColor = true;
-            // 
-            // rbAzul
-            // 
-            this.rbAzul.Image = global::ranita.Properties.Resources.azul;
-            this.rbAzul.Location = new System.Drawing.Point(334, 208);
-            this.rbAzul.Name = "rbAzul";
-            this.rbAzul.Size = new System.Drawing.Size(133, 68);
-            this.rbAzul.TabIndex = 2;
-            this.rbAzul.TabStop = true;
-            this.rbAzul.UseVisualStyleBackColor = true;
-            // 
-            // rbNaranja
-            // 
-            this.rbNaranja.Image = global::ranita.Properties.Resources.naranjita;
-            this.rbNaranja.Location = new System.Drawing.Point(171, 282);
-            this.rbNaranja.Name = "rbNaranja";
-            this.rbNaranja.Size = new System.Drawing.Size(133, 68);
-            this.rbNaranja.TabIndex = 3;
-            this.rbNaranja.TabStop = true;
-            this.rbNaranja.UseVisualStyleBackColor = true;
-            // 
-            // rbRojo
-            // 
-            this.rbRojo.Image = global::ranita.Properties.Resources.rojo;
-            this.rbRojo.Location = new System.Drawing.Point(334, 282);
-            this.rbRojo.Name = "rbRojo";
-            this.rbRojo.Size = new System.Drawing.Size(133, 68);
-            this.rbRojo.TabIndex = 4;
-            this.rbRojo.TabStop = true;
-            this.rbRojo.UseVisualStyleBackColor = true;
-            // 
-            // rbVerde
-            // 
-            this.rbVerde.Image = global::ranita.Properties.Resources.verde;
-            this.rbVerde.Location = new System.Drawing.Point(487, 282);
-            this.rbVerde.Name = "rbVerde";
-            this.rbVerde.Size = new System.Drawing.Size(133, 68);
-            this.rbVerde.TabIndex = 5;
-            this.rbVerde.TabStop = true;
-            this.rbVerde.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button1.Location = new System.Drawing.Point(221, 368);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(306, 71);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "¡A Jugar!";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // tmp
             // 
             this.tmp.AutoSize = true;
@@ -158,6 +85,19 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Elegí tu auto";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.button1.Location = new System.Drawing.Point(221, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(306, 71);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "¡A Jugar!";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -178,6 +118,66 @@
             this.textBox1.Size = new System.Drawing.Size(455, 56);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rbVerde
+            // 
+            this.rbVerde.Image = global::ranita.Properties.Resources.verde;
+            this.rbVerde.Location = new System.Drawing.Point(487, 282);
+            this.rbVerde.Name = "rbVerde";
+            this.rbVerde.Size = new System.Drawing.Size(133, 68);
+            this.rbVerde.TabIndex = 5;
+            this.rbVerde.TabStop = true;
+            this.rbVerde.UseVisualStyleBackColor = true;
+            // 
+            // rbRojo
+            // 
+            this.rbRojo.Image = global::ranita.Properties.Resources.rojo;
+            this.rbRojo.Location = new System.Drawing.Point(334, 282);
+            this.rbRojo.Name = "rbRojo";
+            this.rbRojo.Size = new System.Drawing.Size(133, 68);
+            this.rbRojo.TabIndex = 4;
+            this.rbRojo.TabStop = true;
+            this.rbRojo.UseVisualStyleBackColor = true;
+            // 
+            // rbNaranja
+            // 
+            this.rbNaranja.Image = global::ranita.Properties.Resources.naranjita;
+            this.rbNaranja.Location = new System.Drawing.Point(171, 282);
+            this.rbNaranja.Name = "rbNaranja";
+            this.rbNaranja.Size = new System.Drawing.Size(133, 68);
+            this.rbNaranja.TabIndex = 3;
+            this.rbNaranja.TabStop = true;
+            this.rbNaranja.UseVisualStyleBackColor = true;
+            // 
+            // rbAzul
+            // 
+            this.rbAzul.Image = global::ranita.Properties.Resources.azul;
+            this.rbAzul.Location = new System.Drawing.Point(334, 208);
+            this.rbAzul.Name = "rbAzul";
+            this.rbAzul.Size = new System.Drawing.Size(133, 68);
+            this.rbAzul.TabIndex = 2;
+            this.rbAzul.TabStop = true;
+            this.rbAzul.UseVisualStyleBackColor = true;
+            // 
+            // rbLila
+            // 
+            this.rbLila.Image = global::ranita.Properties.Resources.lila;
+            this.rbLila.Location = new System.Drawing.Point(487, 208);
+            this.rbLila.Name = "rbLila";
+            this.rbLila.Size = new System.Drawing.Size(133, 68);
+            this.rbLila.TabIndex = 1;
+            this.rbLila.TabStop = true;
+            this.rbLila.UseVisualStyleBackColor = true;
+            // 
+            // rbAmarillo
+            // 
+            this.rbAmarillo.Image = global::ranita.Properties.Resources.amarillo;
+            this.rbAmarillo.Location = new System.Drawing.Point(171, 208);
+            this.rbAmarillo.Name = "rbAmarillo";
+            this.rbAmarillo.Size = new System.Drawing.Size(133, 68);
+            this.rbAmarillo.TabIndex = 0;
+            this.rbAmarillo.TabStop = true;
+            this.rbAmarillo.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
