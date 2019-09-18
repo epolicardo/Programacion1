@@ -51,7 +51,13 @@ namespace Parcial_3
             {
                 MessageBox.Show("El alumno " + txtNombre.Text + " ha sido borrado");
             }
+            else
+            {
+                MessageBox.Show("El alumno " + txtNombre.Text + " no ha sido encontrado.");
+            }
             lblListaNombres.Text = Alumnos.MostrarLista();
+            lblListaNombresOrd.Text = Alumnos.Ordenar();
+
         }
 
         private void BtnOrdenar_Click(object sender, EventArgs e)

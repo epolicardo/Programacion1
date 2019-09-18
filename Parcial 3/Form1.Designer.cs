@@ -134,9 +134,8 @@
             this.lblListaNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListaNombres.Location = new System.Drawing.Point(12, 127);
             this.lblListaNombres.Name = "lblListaNombres";
-            this.lblListaNombres.Size = new System.Drawing.Size(203, 24);
+            this.lblListaNombres.Size = new System.Drawing.Size(0, 24);
             this.lblListaNombres.TabIndex = 11;
-            this.lblListaNombres.Text = "Emiliano Policardo - 10";
             // 
             // lblListaNombresOrd
             // 
@@ -144,9 +143,8 @@
             this.lblListaNombresOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListaNombresOrd.Location = new System.Drawing.Point(273, 127);
             this.lblListaNombresOrd.Name = "lblListaNombresOrd";
-            this.lblListaNombresOrd.Size = new System.Drawing.Size(167, 24);
+            this.lblListaNombresOrd.Size = new System.Drawing.Size(0, 24);
             this.lblListaNombresOrd.TabIndex = 15;
-            this.lblListaNombresOrd.Text = "Emiliano Policardo";
             // 
             // label10
             // 
